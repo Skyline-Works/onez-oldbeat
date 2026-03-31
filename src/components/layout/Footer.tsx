@@ -8,7 +8,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-cream font-bold tracking-widest uppercase text-sm mb-4">
-              Space Wonji & Old Beat Yeongdo
+              Space ONE.Z & Old Beat Yeongdo
             </h3>
             <p className="text-cream-muted text-sm leading-relaxed">
               부산 영도의 복합문화공간.
@@ -80,7 +80,7 @@ export default function Footer() {
 
         <div className="mt-16 pt-8 border-t border-cream/5 text-center">
           <p className="text-cream-muted/40 text-xs tracking-wider">
-            © 2025 Space Wonji & Old Beat Yeongdo. All rights reserved.
+            © 2025 Space ONE.Z & Old Beat Yeongdo. All rights reserved.
           </p>
         </div>
       </div>

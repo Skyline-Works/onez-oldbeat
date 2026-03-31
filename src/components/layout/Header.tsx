@@ -22,7 +22,7 @@ export default function Header() {
         {/* Logo */}
         <Link href="/" className="flex flex-col leading-tight">
           <span className="text-cream text-sm font-bold tracking-widest uppercase">
-            Space Wonji
+            Space ONE.Z
           </span>
           <span className="text-cream-muted text-[10px] tracking-wider">
             & Old Beat Yeongdo
