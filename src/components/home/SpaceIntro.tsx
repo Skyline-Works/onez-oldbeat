@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import AnimatedSection from "@/components/ui/AnimatedSection";
 import Button from "@/components/ui/Button";
 
@@ -22,54 +23,76 @@ const spaces = [
   },
 ];
 
+function ParallaxImage({ src }: { src: string }) {
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleScroll() {
+      if (!ref.current) return;
+      const rect = ref.current.getBoundingClientRect();
+      const progress = (window.innerHeight - rect.top) / (window.innerHeight + rect.height);
+      const y = (progress - 0.5) * -60;
+      ref.current.style.transform = `translate3d(0, ${y}px, 0) scale(1.1)`;
+    }
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <div className="absolute inset-0 overflow-hidden">
+      <div
+        ref={ref}
+        className="absolute inset-[-10%] bg-cover bg-center parallax-img"
+        style={{ backgroundImage: `url(${src})` }}
+      />
+      <div className="absolute inset-0 bg-dark/40" />
+    </div>
+  );
+}
+
 export default function SpaceIntro() {
   return (
-    <section className="py-24 sm:py-32 bg-dark">
-      <div className="max-w-7xl mx-auto px-6">
+    <section>
+      {/* Section title */}
+      <div className="py-32 sm:py-40 text-center">
         <AnimatedSection>
-          <p className="text-accent text-xs tracking-[0.3em] uppercase mb-4">
+          <p className="text-accent text-[11px] tracking-[0.4em] uppercase mb-6">
             Our Spaces
           </p>
-          <h2 className="text-cream text-3xl sm:text-5xl font-bold mb-16">
+          <h2 className="text-cream text-4xl sm:text-6xl lg:text-7xl font-bold leading-[0.95] tracking-tight">
             두 개의 공간,
             <br />
             하나의 이야기
           </h2>
         </AnimatedSection>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {spaces.map((space, i) => (
-            <AnimatedSection key={space.name} delay={i * 0.15}>
-              <div className="group relative overflow-hidden bg-dark-light border border-cream/5 hover:border-accent/30 transition-all duration-500">
-                {/* Image */}
-                <div className="aspect-[4/3] bg-dark-lighter relative overflow-hidden">
-                  <div
-                    className="absolute inset-0 bg-cover bg-center opacity-60 group-hover:opacity-80 group-hover:scale-105 transition-all duration-700"
-                    style={{ backgroundImage: `url(${space.image})` }}
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-dark-light via-transparent to-transparent" />
-                </div>
-
-                {/* Text */}
-                <div className="p-8">
-                  <p className="text-accent text-[10px] tracking-[0.3em] uppercase mb-2">
-                    {space.sub}
-                  </p>
-                  <h3 className="text-cream text-2xl font-bold mb-4">
-                    {space.name}
-                  </h3>
-                  <p className="text-cream-muted text-sm leading-relaxed mb-6">
-                    {space.description}
-                  </p>
-                  <Button href={space.href} variant="ghost" className="px-0">
-                    자세히 보기 →
-                  </Button>
-                </div>
-              </div>
-            </AnimatedSection>
-          ))}
-        </div>
       </div>
+
+      {/* Space sections — full-bleed cinematic */}
+      {spaces.map((space, i) => (
+        <div key={space.name} className="relative h-screen flex items-center overflow-hidden">
+          <ParallaxImage src={space.image} />
+
+          <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
+            <div className={`max-w-lg ${i % 2 === 1 ? "ml-auto text-right" : ""}`}>
+              <AnimatedSection animation={i % 2 === 0 ? "reveal-left" : "reveal-right"}>
+                <p className="text-accent text-[10px] tracking-[0.4em] uppercase mb-4">
+                  {space.sub}
+                </p>
+                <h3 className="text-cream text-3xl sm:text-5xl font-bold mb-6 leading-tight">
+                  {space.name}
+                </h3>
+                <p className="text-cream/80 text-base sm:text-lg leading-relaxed mb-8 font-light">
+                  {space.description}
+                </p>
+                <Button href={space.href} variant="outline">
+                  자세히 보기
+                </Button>
+              </AnimatedSection>
+            </div>
+          </div>
+        </div>
+      ))}
     </section>
   );
 }
