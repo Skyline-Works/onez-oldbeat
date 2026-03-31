@@ -1,0 +1,34 @@
+[
+  {
+    "id": "restaurant",
+    "name": "스페이스원지 레스토랑",
+    "description": "영도 바다가 내려다보이는 창가에서 즐기는 모던 한식 코스 다이닝. 부산 로컬 식재료를 활용한 시즌별 메뉴를 선보입니다.",
+    "images": ["/images/space-restaurant-1.jpg", "/images/space-restaurant-2.jpg"],
+    "capacity": 40,
+    "features": ["오션뷰 좌석", "프라이빗 다이닝룸", "코스 요리", "와인 페어링"]
+  },
+  {
+    "id": "gallery",
+    "name": "올드비트 갤러리",
+    "description": "높은 천장과 넓은 벽면을 갖춘 1층 갤러리 공간. 현대미술, 미디어아트, 설치미술 전시를 개최합니다.",
+    "images": ["/images/space-gallery-1.jpg", "/images/space-gallery-2.jpg"],
+    "capacity": 80,
+    "features": ["천고 5m", "자연채광", "가변형 벽면", "미디어 장비 완비"]
+  },
+  {
+    "id": "rooftop",
+    "name": "올드비트 루프탑",
+    "description": "부산항과 영도대교가 한눈에 보이는 루프탑 공간. 소규모 공연, 파티, 프라이빗 이벤트에 적합합니다.",
+    "images": ["/images/space-rooftop-1.jpg", "/images/space-rooftop-2.jpg"],
+    "capacity": 60,
+    "features": ["오션뷰 파노라마", "음향 시스템", "야간 조명", "바 카운터"]
+  },
+  {
+    "id": "workshop",
+    "name": "워크숍룸",
+    "description": "다양한 원데이 클래스와 워크숍이 열리는 2층 다목적 공간. 소규모 세미나와 미팅에도 활용 가능합니다.",
+    "images": ["/images/space-workshop-1.jpg", "/images/space-workshop-2.jpg"],
+    "capacity": 20,
+    "features": ["프로젝터", "작업 테이블", "수도 시설", "재료 보관함"]
+  }
+]
