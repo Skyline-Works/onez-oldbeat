@@ -5,7 +5,7 @@ import { getAllNews } from "@/lib/data";
 
 export const metadata: Metadata = {
   title: "소식",
-  description: "스페이스원지와 올드비트 영도의 주요 소식을 확인하세요.",
+  description: "스페이스 원지와 올드비트 영도의 주요 소식을 확인하세요.",
 };
 
 export default function NewsPage() {
@@ -22,7 +22,7 @@ export default function NewsPage() {
             소식
           </h1>
           <p className="text-cream-muted text-lg mb-16">
-            스페이스원지와 올드비트 영도의 새로운 소식을 전합니다.
+            스페이스 원지와 올드비트 영도의 새로운 소식을 전합니다.
           </p>
         </AnimatedSection>
 

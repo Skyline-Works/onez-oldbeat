@@ -17,12 +17,12 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative h-[120vh] flex items-center justify-center overflow-hidden">
+    <section className="relative h-screen flex items-center justify-center overflow-hidden">
       {/* Parallax background */}
       <div className="absolute inset-0">
         <div
           ref={bgRef}
-          className="absolute inset-[-20%] bg-[url('/images/hero.jpg')] bg-cover bg-center animate-hero-bg"
+          className="absolute inset-0 bg-[url('/hero.jpg')] bg-cover bg-center"
         />
         <div className="absolute inset-0 bg-dark/60" />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-dark" />
@@ -34,16 +34,16 @@ export default function Hero() {
           Busan Yeongdo — Culture & Dining
         </p>
 
-        <h1 className="text-cream text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-bold leading-[0.95] tracking-tighter mb-8 animate-fade-up [animation-delay:500ms]">
-          스페이스원지
+        <h1 className="text-cream text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-[0.95] tracking-tighter mb-8 animate-fade-up [animation-delay:500ms]">
+          스페이스 원지
           <br />
           <span className="text-accent">&</span> 올드비트 영도
         </h1>
 
-        <p className="text-cream-muted text-lg sm:text-2xl max-w-2xl mx-auto mb-14 leading-relaxed font-light animate-fade-up [animation-delay:800ms]">
-          부산항 영도의 복합문화공간.
+        <p className="text-cream-muted text-lg sm:text-2xl max-w-2xl mx-auto mb-14 leading-relaxed font-bold animate-fade-up [animation-delay:800ms]">
+          오래된 항구의 새로운 울림,
           <br />
-          맛과 예술이 만나는 곳.
+          맛과 문화가 머무는 공간.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up [animation-delay:1100ms]">

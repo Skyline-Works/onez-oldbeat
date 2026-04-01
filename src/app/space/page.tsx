@@ -6,7 +6,7 @@ import { getAllSpaces } from "@/lib/data";
 export const metadata: Metadata = {
   title: "공간 안내",
   description:
-    "스페이스원지 레스토랑, 올드비트 갤러리, 루프탑, 워크숍룸 — 각 공간을 소개합니다.",
+    "스페이스 원지 레스토랑, 올드비트 갤러리, 루프탑, 워크숍룸 — 각 공간을 소개합니다.",
 };
 
 export default function SpacePage() {

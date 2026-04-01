@@ -89,7 +89,7 @@ def generate_word():
     add_table(["항목", "내용"], [
         ["프로젝트명", "Space ONE.Z & Old Beat Yeongdo 웹사이트 구축"],
         ["프로젝트 유형", "신규 웹사이트 개발"],
-        ["위치", "부산광역시 영도구 대평로 27번길 8"],
+        ["위치", "부산광역시 영도구 봉래나루로 214 1층"],
         ["공간 유형", "복합문화공간 (레스토랑 + 갤러리 + 공연장 + 워크숍)"],
         ["브랜드", "스페이스원지 (Space ONE.Z) / 올드비트 영도 (Old Beat Yeongdo)"],
         ["웹사이트 구조", "하나의 통합 사이트 (두 브랜드를 섹션으로 구분)"],
@@ -314,7 +314,7 @@ def generate_pptx():
     add_textbox(slide, 0.8, 0.9, 6, 1, "프로젝트 개요", 36, WHITE, True)
     items = [
         "프로젝트명  Space ONE.Z & Old Beat Yeongdo 웹사이트",
-        "위치  부산광역시 영도구 대평로 27번길 8",
+        "위치  부산광역시 영도구 봉래나루로 214 1층",
         "공간 유형  복합문화공간 (레스토랑 + 갤러리 + 공연장 + 워크숍)",
         "웹사이트  하나의 통합 사이트",
         "예약 연동  네이버 예약 외부 링크",
@@ -525,7 +525,7 @@ def generate_pptx():
     add_textbox(slide, 0, 3.5, 13.333, 0.8,
         "Space ONE.Z & Old Beat Yeongdo", 20, ACCENT, False, PP_ALIGN.CENTER)
     add_textbox(slide, 0, 4.5, 13.333, 0.5,
-        "hello@spacewonji.com  |  부산광역시 영도구 대평로 27번길 8", 14, GRAY, False, PP_ALIGN.CENTER)
+        "부산광역시 영도구 봉래나루로 214 1층", 14, GRAY, False, PP_ALIGN.CENTER)
 
     path = os.path.join(BASE_DIR, "SpaceONEZ_기획서.pptx")
     prs.save(path)

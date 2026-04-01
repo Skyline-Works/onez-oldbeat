@@ -1,7 +1,7 @@
 [
   {
     "id": "restaurant",
-    "name": "스페이스원지 레스토랑",
+    "name": "스페이스 원지 레스토랑",
     "description": "영도 바다가 내려다보이는 창가에서 즐기는 모던 한식 코스 다이닝. 부산 로컬 식재료를 활용한 시즌별 메뉴를 선보입니다.",
     "images": ["/images/space-restaurant-1.jpg", "/images/space-restaurant-2.jpg"],
     "capacity": 40,

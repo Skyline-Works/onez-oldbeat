@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "스페이스원지 & 올드비트 영도",
-    template: "%s | 스페이스원지 & 올드비트 영도",
+    default: "스페이스 원지 & 올드비트 영도",
+    template: "%s | 스페이스 원지 & 올드비트 영도",
   },
   description:
     "부산 영도의 복합문화공간. 레스토랑, 갤러리, 공연, 워크숍이 하나로 어우러진 공간입니다.",
@@ -35,7 +35,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-dark text-cream">
         <Header />
-        <main className="flex-1 pt-16">{children}</main>
+        <main className="flex-1 pt-20">{children}</main>
         <Footer />
       </body>
     </html>

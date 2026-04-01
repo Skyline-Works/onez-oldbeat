@@ -7,7 +7,7 @@ import type { EventItem } from "@/types";
 export const metadata: Metadata = {
   title: "행사 · 전시",
   description:
-    "스페이스원지와 올드비트 영도에서 열리는 전시, 공연, 워크숍 프로그램을 확인하세요.",
+    "스페이스 원지와 올드비트 영도에서 열리는 전시, 공연, 워크숍 프로그램을 확인하세요.",
 };
 
 function groupByStatus(events: EventItem[]) {
@@ -32,7 +32,7 @@ export default function EventsPage() {
             행사 · 전시
           </h1>
           <p className="text-cream-muted text-lg mb-16">
-            스페이스원지와 올드비트 영도에서 열리는 다양한 문화 프로그램입니다.
+            스페이스 원지와 올드비트 영도에서 열리는 다양한 문화 프로그램입니다.
           </p>
         </AnimatedSection>
 

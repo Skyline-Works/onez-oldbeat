@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import type { NavItem } from "@/types";
@@ -18,15 +19,24 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-dark/80 backdrop-blur-md border-b border-cream/10">
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex flex-col leading-tight">
-          <span className="text-cream text-sm font-bold tracking-widest uppercase">
-            Space ONE.Z
-          </span>
-          <span className="text-cream-muted text-[10px] tracking-wider">
-            & Old Beat Yeongdo
-          </span>
+        <Link href="/" className="flex items-center gap-3">
+          <Image
+            src="/logo.jpg"
+            alt="Space ONE.Z"
+            width={36}
+            height={36}
+            className="rounded-full"
+          />
+          <div className="flex flex-col leading-tight">
+            <span className="text-cream text-sm font-bold tracking-widest uppercase">
+              Space ONE.Z
+            </span>
+            <span className="text-cream-muted text-[10px] tracking-wider">
+              & Old Beat Yeongdo
+            </span>
+          </div>
         </Link>
 
         {/* Desktop Nav */}

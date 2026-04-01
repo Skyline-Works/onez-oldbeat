@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,9 +8,18 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <h3 className="text-cream font-bold tracking-widest uppercase text-sm mb-4">
-              Space ONE.Z & Old Beat Yeongdo
-            </h3>
+            <div className="flex items-center gap-3 mb-4">
+              <Image
+                src="/logo.jpg"
+                alt="Space ONE.Z"
+                width={32}
+                height={32}
+                className="rounded-full"
+              />
+              <h3 className="text-cream font-bold tracking-widest uppercase text-sm">
+                Space ONE.Z & Old Beat Yeongdo
+              </h3>
+            </div>
             <p className="text-cream-muted text-sm leading-relaxed">
               부산 영도의 복합문화공간.
               <br />
@@ -50,9 +60,8 @@ export default function Footer() {
               연락처
             </h4>
             <ul className="space-y-2 text-cream-muted text-sm">
-              <li>부산광역시 영도구 대평로 27번길 8</li>
+              <li>부산광역시 영도구 봉래나루로 214 1층</li>
               <li>TEL. 051-000-0000</li>
-              <li>EMAIL. hello@spacewonji.com</li>
               <li className="pt-2">
                 영업시간: 화~일 11:00 - 22:00
                 <br />

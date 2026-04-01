@@ -5,7 +5,7 @@ import Button from "@/components/ui/Button";
 export const metadata: Metadata = {
   title: "소개",
   description:
-    "스페이스원지와 올드비트 영도의 이야기. 부산 영도의 역사와 문화를 잇는 복합문화공간입니다.",
+    "스페이스 원지와 올드비트 영도의 이야기. 부산 영도의 역사와 문화를 잇는 복합문화공간입니다.",
 };
 
 export default function AboutPage() {
@@ -40,7 +40,7 @@ export default function AboutPage() {
               </h2>
               <p className="text-cream text-xl sm:text-2xl leading-relaxed mb-8">
                 부산항 영도. 한때 대한민국 조선업의 심장이었던 이곳에
-                스페이스원지와 올드비트 영도가 자리 잡았습니다.
+                스페이스 원지와 올드비트 영도가 자리 잡았습니다.
               </p>
               <p className="text-cream-muted leading-loose">
                 영도의 역사적 건물을 리노베이션하여 탄생한 이 공간은,
@@ -61,7 +61,7 @@ export default function AboutPage() {
                 맛과 예술, 그리고 사람이 만나는 곳.
               </p>
               <p className="text-cream-muted leading-loose">
-                스페이스원지는 &quot;하나의 공간에서 다양한 경험을&quot;이라는
+                스페이스 원지는 &quot;하나의 공간에서 다양한 경험을&quot;이라는
                 철학으로 운영됩니다. 레스토랑에서의 미식, 갤러리에서의
                 예술, 루프탑에서의 공연, 워크숍에서의 창작까지 — 방문할
                 때마다 새로운 경험이 기다립니다.

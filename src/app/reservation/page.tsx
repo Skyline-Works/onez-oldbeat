@@ -47,7 +47,7 @@ export default function ReservationPage() {
                 레스토랑 예약
               </h2>
               <p className="text-cream-muted text-sm mb-8 leading-relaxed">
-                스페이스원지 레스토랑은 네이버 예약을 통해 예약하실 수 있습니다.
+                스페이스 원지 레스토랑은 네이버 예약을 통해 예약하실 수 있습니다.
                 런치 코스와 디너 코스 중 선택해주세요.
               </p>
 
