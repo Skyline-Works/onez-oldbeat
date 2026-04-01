@@ -9,7 +9,7 @@ const spaces = [
     name: "스페이스 원지",
     sub: "SPACE ONE.Z",
     description:
-      "영도 바다가 내려다보이는 모던 한식 레스토랑. 부산 로컬 식재료로 만든 시즌별 코스 다이닝과 함께 특별한 미식 경험을 제공합니다.",
+      "영도 바다가 내려다보이는 모던 양식 레스토랑. 부산 로컬 식재료로 만든 시즌별 코스 다이닝과 함께 특별한 미식 경험을 제공합니다.",
     image: "/images/space-wonji-intro.jpg",
     href: "/space",
   },
